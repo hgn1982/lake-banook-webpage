@@ -27,7 +27,7 @@
       statusDiv.textContent = "Submitting...";
       try {
         // Replace with your n8n webhook URL:
-        const webhookUrl = "https://YOUR_N8N_WEBHOOK_URL";
+        const webhookUrl = "http://localhost:5678/webhook-test/c9c8e5cf-6674-4e95-b994-8340d2fb1a66";
         const res = await fetch(webhookUrl, {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
